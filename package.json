@@ -1,0 +1,117 @@
+{
+  "name": "change-case-extends",
+  "displayName": "Change Case",
+  "description": "Quickly change the case (camelCase, CONSTANT_CASE, snake_case, etc) of the current selection or current word",
+  "icon": "images/change-case-icon.jpg",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.86.0"
+  },
+  "galleryBanner": {
+    "color": "#007ACC",
+    "theme": "dark"
+  },
+  "categories": [
+    "Other"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CanhhnaC/change-case-extends.git"
+  },
+  "bugs": {
+    "url": "https://github.com/CanhhnaC/change-case-extends/issues"
+  },
+  "publisher": "CanhhnaC",
+  "type": "module",
+  "files": [
+    "dist",
+    "index.d.ts"
+  ],
+  "activationEvents": [],
+  "main": "./dist/extension.umd.cjs",
+  "module": "./dist/extension.js",
+  "types": "./index.d.ts",
+  "exports": {
+    "types": "./index.d.ts",
+    "import": "./dist/extension.js",
+    "require": "./dist/extension.umd.cjs"
+  },
+  "contributes": {
+    "commands": [
+      {
+        "command": "extension.changeCaseExtends.commands",
+        "title": "Change Case Commands"
+      },
+      {
+        "command": "extension.changeCaseExtends.camelCase",
+        "title": "Change to Camel Case"
+      },
+      {
+        "command": "extension.changeCaseExtends.capitalCase",
+        "title": "Change to Capital Case"
+      },
+      {
+        "command": "extension.changeCaseExtends.constantCase",
+        "title": "Change to Constant Case"
+      },
+      {
+        "command": "extension.changeCaseExtends.dotCase",
+        "title": "Change to Dot Case"
+      },
+      {
+        "command": "extension.changeCaseExtends.kebabCase",
+        "title": "Change to Kebab Case"
+      },
+      {
+        "command": "extension.changeCaseExtends.noCase",
+        "title": "Change to No Case"
+      },
+      {
+        "command": "extension.changeCaseExtends.pascalCase",
+        "title": "Change to Pascal Case"
+      },
+      {
+        "command": "extension.changeCaseExtends.pascalSnakeCase",
+        "title": "Change to Pascal Snake Case"
+      },
+      {
+        "command": "extension.changeCaseExtends.pathCase",
+        "title": "Change to Path Case"
+      },
+      {
+        "command": "extension.changeCaseExtends.sentenceCase",
+        "title": "Change to Sentence Case"
+      },
+      {
+        "command": "extension.changeCaseExtends.snakeCase",
+        "title": "Change to Snake Case"
+      },
+      {
+        "command": "extension.changeCaseExtends.trainCase",
+        "title": "Change to Train Case"
+      },
+      {
+        "command": "extension.changeCaseExtends.removeAccents",
+        "title": "Remove Accents"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run package",
+    "package": "tsc && vite build",
+    "compile": "tsc"
+  },
+  "devDependencies": {
+    "@types/lodash.uniq": "^4.5.9",
+    "@types/mocha": "^10.0.6",
+    "@types/node": "^20.11.19",
+    "@types/vscode": "^1.86.0",
+    "typescript": "^5.3.3",
+    "vite": "^5.0.10"
+  },
+  "dependencies": {
+    "change-case": "^5.4.3",
+    "lodash.uniq": "^4.5.0"
+  }
+}
